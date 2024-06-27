@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQD0HTSDK1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQD0HTSDK1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-LQD0HTSDK1');
-</script>
+      gtag('config', 'G-LQD0HTSDK1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lado A Music</title>
@@ -86,6 +86,8 @@
             margin: 0 10px;
         }
     </style>
+    <!-- Lazysizes para la carga diferida de imágenes -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
 </head>
 <body>
     <header>
@@ -114,39 +116,123 @@
         
         <!-- Sala de Control -->
         <h3>Sala de Control</h3>
-        <img src="foto1.jpg" alt="Foto de la sala de control 1" onclick="expandImage(this)">
-        <img src="foto2.jpg" alt="Foto de la sala de control 2" onclick="expandImage(this)">
+        <picture>
+            <source data-srcset="foto1.webp" type="image/webp">
+            <source data-srcset="foto1.jpg" type="image/jpeg">
+            <img data-src="foto1.jpg" class="lazyload" alt="Foto de la sala de control 1" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto2.webp" type="image/webp">
+            <source data-srcset="foto2.jpg" type="image/jpeg">
+            <img data-src="foto2.jpg" class="lazyload" alt="Foto de la sala de control 2" width="300" height="200">
+        </picture>
 
         <!-- Sala de Grabación -->
         <h3>Sala de Grabación</h3>
-        <img src="foto3.jpg" alt="Foto de la sala de grabación 1" onclick="expandImage(this)">
-        <img src="foto4.jpg" alt="Foto de la sala de grabación 2" onclick="expandImage(this)">
-        <img src="foto5.jpg" alt="Foto de la sala de grabación 3" onclick="expandImage(this)">
-        <img src="foto6.jpg" alt="Foto de la sala de grabación 4" onclick="expandImage(this)">
-        <img src="foto7.jpg" alt="Foto de la sala de grabación 5" onclick="expandImage(this)">
-        <img src="foto8.jpg" alt="Foto de la sala de grabación 6" onclick="expandImage(this)">
-        <img src="foto9.jpg" alt="Foto de la sala de grabación 7" onclick="expandImage(this)">
-        <img src="foto10.jpg" alt="Foto de la sala de grabación 8" onclick="expandImage(this)">
-        <img src="foto11.jpg" alt="Foto de la sala de grabación 9" onclick="expandImage(this)">
+        <picture>
+            <source data-srcset="foto3.webp" type="image/webp">
+            <source data-srcset="foto3.jpg" type="image/jpeg">
+            <img data-src="foto3.jpg" class="lazyload" alt="Foto de la sala de grabación 1" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto4.webp" type="image/webp">
+            <source data-srcset="foto4.jpg" type="image/jpeg">
+            <img data-src="foto4.jpg" class="lazyload" alt="Foto de la sala de grabación 2" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto5.webp" type="image/webp">
+            <source data-srcset="foto5.jpg" type="image/jpeg">
+            <img data-src="foto5.jpg" class="lazyload" alt="Foto de la sala de grabación 3" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto6.webp" type="image/webp">
+            <source data-srcset="foto6.jpg" type="image/jpeg">
+            <img data-src="foto6.jpg" class="lazyload" alt="Foto de la sala de grabación 4" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto7.webp" type="image/webp">
+            <source data-srcset="foto7.jpg" type="image/jpeg">
+            <img data-src="foto7.jpg" class="lazyload" alt="Foto de la sala de grabación 5" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto8.webp" type="image/webp">
+            <source data-srcset="foto8.jpg" type="image/jpeg">
+            <img data-src="foto8.jpg" class="lazyload" alt="Foto de la sala de grabación 6" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto9.webp" type="image/webp">
+            <source data-srcset="foto9.jpg" type="image/jpeg">
+            <img data-src="foto9.jpg" class="lazyload" alt="Foto de la sala de grabación 7" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto10.webp" type="image/webp">
+            <source data-srcset="foto10.jpg" type="image/jpeg">
+            <img data-src="foto10.jpg" class="lazyload" alt="Foto de la sala de grabación 8" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto11.webp" type="image/webp">
+            <source data-srcset="foto11.jpg" type="image/jpeg">
+            <img data-src="foto11.jpg" class="lazyload" alt="Foto de la sala de grabación 9" width="300" height="200">
+        </picture>
        
         <!-- Sala Auxiliar -->
         <h3>Sala Auxiliar</h3>
-        <img src="foto12.jpg" alt="Foto de la sala auxiliar 1" onclick="expandImage(this)">
-        <img src="foto13.jpg" alt="Foto de la sala auxiliar 2" onclick="expandImage(this)">
-        <img src="foto14.jpg" alt="Foto de la sala auxiliar 3" onclick="expandImage(this)">
+        <picture>
+            <source data-srcset="foto12.webp" type="image/webp">
+            <source data-srcset="foto12.jpg" type="image/jpeg">
+            <img data-src="foto12.jpg" class="lazyload" alt="Foto de la sala auxiliar 1" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto13.webp" type="image/webp">
+            <source data-srcset="foto13.jpg" type="image/jpeg">
+            <img data-src="foto13.jpg" class="lazyload" alt="Foto de la sala auxiliar 2" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto14.webp" type="image/webp">
+            <source data-srcset="foto14.jpg" type="image/jpeg">
+            <img data-src="foto14.jpg" class="lazyload" alt="Foto de la sala auxiliar 3" width="300" height="200">
+        </picture>
          
         <!-- Sala de Mezcla -->
         <h3>Sala de Mezcla</h3>
-        <img src="foto15.jpg" alt="Foto de la sala de mezcla 1" onclick="expandImage(this)">
-        <img src="foto16.jpg" alt="Foto de la sala de mezcla 2" onclick="expandImage(this)">
-        <img src="foto17.jpg" alt="Foto de la sala de mezcla 3" onclick="expandImage(this)">
+        <picture>
+            <source data-srcset="foto15.webp" type="image/webp">
+            <source data-srcset="foto15.jpg" type="image/jpeg">
+            <img data-src="foto15.jpg" class="lazyload" alt="Foto de la sala de mezcla 1" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto16.webp" type="image/webp">
+            <source data-srcset="foto16.jpg" type="image/jpeg">
+            <img data-src="foto16.jpg" class="lazyload" alt="Foto de la sala de mezcla 2" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto17.webp" type="image/webp">
+            <source data-srcset="foto17.jpg" type="image/jpeg">
+            <img data-src="foto17.jpg" class="lazyload" alt="Foto de la sala de mezcla 3" width="300" height="200">
+        </picture>
 
         <!-- Sala de Ensayo -->
         <h3>Sala de Ensayo</h3>
-        <img src="foto18.jpg" alt="Foto de la sala de ensayo 1" onclick="expandImage(this)">
-        <img src="foto19.jpg" alt="Foto de la sala de ensayo 2" onclick="expandImage(this)">
-        <img src="foto20.jpg" alt="Foto de la sala de ensayo 3" onclick="expandImage(this)">
-        <img src="foto21.jpg" alt="Foto de la sala de ensayo 4" onclick="expandImage(this)">
+        <picture>
+            <source data-srcset="foto18.webp" type="image/webp">
+            <source data-srcset="foto18.jpg" type="image/jpeg">
+            <img data-src="foto18.jpg" class="lazyload" alt="Foto de la sala de ensayo 1" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto19.webp" type="image/webp">
+            <source data-srcset="foto19.jpg" type="image/jpeg">
+            <img data-src="foto19.jpg" class="lazyload" alt="Foto de la sala de ensayo 2" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto20.webp" type="image/webp">
+            <source data-srcset="foto20.jpg" type="image/jpeg">
+            <img data-src="foto20.jpg" class="lazyload" alt="Foto de la sala de ensayo 3" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto21.webp" type="image/webp">
+            <source data-srcset="foto21.jpg" type="image/jpeg">
+            <img data-src="foto21.jpg" class="lazyload" alt="Foto de la sala de ensayo 4" width="300" height="200">
+        </picture>
         
     </section>
 
@@ -175,22 +261,21 @@
             document.body.appendChild(modal);
         }
     </script>
- <footer>
-    <div class="social-links-center; margin-top: 2em;">
-    <a href="https://www.facebook.com/ladoamusic" target="_blank"><img src="facebook.png" alt="Facebook" style="width: 30px;"></a>
-    <a href="https://www.instagram.com/ladoamusic" target="_blank"><img src="instagram.png" alt="Instagram" style="width: 30px;"></a>
-    <a href="https://wa.me/573116759811" target="_blank"><img src="whatsapp.png" alt="Whatsapp" style="width: 30px;"></a>
-    <a href="https://www.youtube.com/@ladoamusic" target="_blank"><img src="youtube.png" alt="Youtube" style="width: 30px;"></a>
-    <a href="https://maps.app.goo.gl/4rNzwuSF7MEyej9s8" target="_blank"><img src="googlemaps.png" alt="Google Maps" style="width: 30px;"></a>
+    <footer>
+        <div class="social-links-center" style="margin-top: 2em;">
+            <a href="https://www.facebook.com/ladoamusic" target="_blank"><img src="facebook.png" alt="Facebook" style="width: 30px;"></a>
+            <a href="https://www.instagram.com/ladoamusic" target="_blank"><img src="instagram.png" alt="Instagram" style="width: 30px;"></a>
+            <a href="https://wa.me/573116759811" target="_blank"><img src="whatsapp.png" alt="Whatsapp" style="width: 30px;"></a>
+            <a href="https://www.youtube.com/@ladoamusic" target="_blank"><img src="youtube.png" alt="Youtube" style="width: 30px;"></a>
+            <a href="https://maps.app.goo.gl/4rNzwuSF7MEyej9s8" target="_blank"><img src="googlemaps.png" alt="Google Maps" style="width: 30px;"></a>
+        </div>
+    </footer>
+    <div class="social-links-top-right">
+        <a href="https://www.facebook.com/ladoamusic" target="_blank"><img src="facebook.png" alt="Facebook" style="width: 30px;"></a>
+        <a href="https://www.instagram.com/ladoamusic" target="_blank"><img src="instagram.png" alt="Instagram" style="width: 30px;"></a>
+        <a href="https://wa.me/573116759811" target="_blank"><img src="whatsapp.png" alt="Whatsapp" style="width: 30px;"></a>
+        <a href="https://www.youtube.com/@ladoamusic" target="_blank"><img src="youtube.png" alt="Youtube" style="width: 30px;"></a>
+        <a href="https://maps.app.goo.gl/4rNzwuSF7MEyej9s8" target="_blank"><img src="googlemaps.png" alt="Google Maps" style="width: 30px;"></a>
     </div>
-</footer>
-<div class="social-links-top-right">
-    <a href="https://www.facebook.com/ladoamusic" target="_blank"><img src="facebook.png" alt="Facebook" style="width: 30px;"></a>
-    <a href="https://www.instagram.com/ladoamusic" target="_blank"><img src="instagram.png" alt="Instagram" style="width: 30px;"></a>
-    <a href="https://wa.me/573116759811" target="_blank"><img src="whatsapp.png" alt="Whatsapp" style="width: 30px;"></a>
-    <a href="https://www.youtube.com/@ladoamusic" target="_blank"><img src="youtube.png" alt="Youtube" style="width: 30px;"></a>
-    <a href="https://maps.app.goo.gl/4rNzwuSF7MEyej9s8" target="_blank"><img src="googlemaps.png" alt="Google Maps" style="width: 30px;"></a>
-</div>
-    
 </body>
 </html>
