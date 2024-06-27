@@ -38,8 +38,8 @@
         <!-- Sala Auxiliar -->
         <h3>Sala Auxiliar</h3>
         <img src="foto1.jpg" alt="Foto de la sala auxiliar 1">
-        <img src="sala_auxiliar/foto2.jpg" alt="Foto de la sala auxiliar 2">
-        <img src="sala_auxiliar/foto3.jpg" alt="Foto de la sala auxiliar 3">
+        <img src="foto2.jpg" alt="Foto de la sala auxiliar 2">
+        <img src="foto3.jpg" alt="Foto de la sala auxiliar 3">
         
         <!-- Sala de Control -->
         <h3>Sala de Control</h3>
@@ -65,5 +65,31 @@
         <img src="sala_de_grabacion/foto8.jpg" alt="Foto de la sala de grabación 8">
         <img src="sala_de_grabacion/foto9.jpg" alt="Foto de la sala de grabación 9">
     </section>
+
+    <script>
+        function expandImage(img) {
+            var src = img.src;
+            var modal = document.createElement('div');
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            modal.style.display = 'flex';
+            modal.style.alignItems = 'center';
+            modal.style.justifyContent = 'center';
+            modal.style.cursor = 'pointer';
+            modal.onclick = function() { document.body.removeChild(modal); };
+            
+            var modalImg = document.createElement('img');
+            modalImg.src = src;
+            modalImg.style.maxWidth = '90%';
+            modalImg.style.maxHeight = '90%';
+            
+            modal.appendChild(modalImg);
+            document.body.appendChild(modal);
+        }
+    </script>
 </body>
 </html>
