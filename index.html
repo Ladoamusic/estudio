@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lado A Music</title>
     <style>
+        .social-links-top-right {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según sea necesario */
+    right: 10px; /* Ajusta la posición horizontal según sea necesario */
+}
+
+.social-links-top-right a {
+    margin-left: 10px; /* Espacio entre los iconos */
+}
+
         body {
             font-family: Arial, sans-serif;
             background-color: #333; /* Fondo oscuro */
@@ -142,14 +152,20 @@
             document.body.appendChild(modal);
         }
     </script>
-    <footer>
+ <footer>
     <div style="text-align: center; margin-top: 2em;">
         <a href="https://www.facebook.com/ladoamusic" target="_blank">Facebook</a> |
         <a href="https://www.instagram.com/ladoamusic" target="_blank">Instagram</a>
     </div>
     <div style="text-align: center; margin-top: 1em;">
-        Ubicación: <a href="https://maps.app.goo.gl/4rNzwuSF7MEyej9s8" target="_blank">Calle 104A #47A-79, Bogotá, Colombia</a>
+        Ubicación: <a href="https://goo.gl/maps/ubicacion-de-google-maps" target="_blank">Calle 104A #47A-79, Bogotá, Colombia</a>
     </div>
 </footer>
+<div class="social-links-top-right">
+    <a href="https://www.facebook.com/ladoamusic" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com/ladoamusic" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+    <a href="https://goo.gl/maps/ubicacion-de-google-maps" target="_blank"><img src="google-maps-icon.png" alt="Google Maps"></a>
+</div>
+    
 </body>
 </html>
