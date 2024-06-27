@@ -68,6 +68,7 @@
             position: absolute;
             top: 10px;
             right: 10px;
+            z-index: 10;
         }
 
         .social-links-top-right a {
@@ -112,6 +113,11 @@
 <body>
     <header>
         <h1><img src="logo.png" alt="Logo del Estudio" style="max-width: 400px;"></h1>
+        <!-- Enlaces a redes sociales -->
+        <div class="social-links-top-right">
+            <a href="https://www.facebook.com/ladoamusic" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/ladoamusic" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+        </div>
     </header>
     
     <!-- Video de YouTube -->
@@ -141,9 +147,6 @@
                 <div class="swiper-slide">
                     <img src="foto1.jpg" alt="Foto de la sala de control 1">
                 </div>
-                <div class="swiper-slide">
-                    <img src="foto2.jpg" alt="Foto de la sala de control 2">
-                </div>
                 <!-- Agrega más imágenes según sea necesario -->
             </div>
             <!-- Agregar navegación si lo deseas -->
@@ -156,31 +159,7 @@
         <div class="swiper-container sala-grabacion">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="foto3.jpg" alt="Foto de la sala de grabación 1">
-                </div>
-                <div class="swiper-slide">
-                    <img src="foto4.jpg" alt="Foto de la sala de grabación 2">
-                </div>
-                <div class="swiper-slide">
-                    <img src="foto5.jpg" alt="Foto de la sala de grabación 3">
-                </div>
-                <div class="swiper-slide">
-                    <img src="foto6.jpg" alt="Foto de la sala de grabación 4">
-                </div>
-                <div class="swiper-slide">
-                    <img src="foto7.jpg" alt="Foto de la sala de grabación 5">
-                </div>
-                <div class="swiper-slide">
-                    <img src="foto8.jpg" alt="Foto de la sala de grabación 6">
-                </div>
-                <div class="swiper-slide">
-                    <img src="foto9.jpg" alt="Foto de la sala de grabación 7">
-                </div>
-                <div class="swiper-slide">
-                    <img src="foto10.jpg" alt="Foto de la sala de grabación 8">
-                </div>
-                <div class="swiper-slide">
-                    <img src="foto11.jpg" alt="Foto de la sala de grabación 9">
+                    <img src="foto2.jpg" alt="Foto de la sala de grabación 1">
                 </div>
                 <!-- Agrega más imágenes según sea necesario -->
             </div>
@@ -189,15 +168,26 @@
             <div class="swiper-button-prev"></div>
         </div>
 
-        <!-- Agrega más secciones de carrusel para otras salas -->
-        
+        <!-- Carrusel de Sala de Ensayo -->
+        <h3>Sala de Ensayo</h3>
+        <div class="swiper-container sala-ensayo">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="foto3.jpg" alt="Foto de la sala de ensayo 1">
+                </div>
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <!-- Agregar navegación si lo deseas -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </section>
 
     <!-- Scripts al final para mejorar el rendimiento de carga -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiperControl = new Swiper('.sala-control', {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 10,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -206,7 +196,16 @@
         });
 
         var swiperGrabacion = new Swiper('.sala-grabacion', {
-            slidesPerView: 3,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        var swiperEnsayo = new Swiper('.sala-ensayo', {
+            slidesPerView: 1,
             spaceBetween: 10,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -226,3 +225,4 @@
     </footer>
 </body>
 </html>
+
