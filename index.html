@@ -5,21 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio de Grabación</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        header { background-color: #333; color: white; padding: 1em 0; text-align: center; }
-        section { padding: 2em; }
-        .photo-gallery img { width: 100%; max-width: 300px; margin: 1em; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333; /* Fondo oscuro */
+            color: white; /* Texto claro */
+        }
+        header {
+            background-color: #fff; /* Fondo claro */
+            color: #333; /* Texto oscuro */
+            padding: 1em 0;
+            text-align: center;
+        }
+        section {
+            padding: 2em;
+        }
+        .photo-gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 1em;
+            cursor: pointer;
+        }
+        .photo-gallery h3 {
+            color: #fff; /* Mantener el texto claro */
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Estudio de Grabación</h1>
+        <h1><img src="ruta/a/tu/logo.png" alt="Logo del Estudio" style="max-width: 200px;"></h1>
     </header>
     
     <!-- Video de YouTube -->
     <section>
         <div style="text-align:center;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ELAONSjjric?autoplay=1&mute=1&vq=hd1080" 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ELAONSjjric?autoplay=1&vq=hd1080&mute=0" 
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allow="autoplay; encrypted-media" allowfullscreen>
             </iframe>
@@ -37,33 +56,33 @@
         <h2>Galería de Fotos</h2>
         <!-- Sala Auxiliar -->
         <h3>Sala Auxiliar</h3>
-        <img src="foto1.jpg" alt="Foto de la sala auxiliar 1">
-        <img src="foto2.jpg" alt="Foto de la sala auxiliar 2">
-        <img src="foto3.jpg" alt="Foto de la sala auxiliar 3">
+        <img src="sala_auxiliar/foto1.jpg" alt="Foto de la sala auxiliar 1" onclick="expandImage(this)">
+        <img src="sala_auxiliar/foto2.jpg" alt="Foto de la sala auxiliar 2" onclick="expandImage(this)">
+        <img src="sala_auxiliar/foto3.jpg" alt="Foto de la sala auxiliar 3" onclick="expandImage(this)">
         
         <!-- Sala de Control -->
         <h3>Sala de Control</h3>
-        <img src="sala_de_control/foto1.jpg" alt="Foto de la sala de control 1">
-        <img src="sala_de_control/foto2.jpg" alt="Foto de la sala de control 2">
+        <img src="sala_de_control/foto1.jpg" alt="Foto de la sala de control 1" onclick="expandImage(this)">
+        <img src="sala_de_control/foto2.jpg" alt="Foto de la sala de control 2" onclick="expandImage(this)">
         
         <!-- Sala de Ensayo -->
         <h3>Sala de Ensayo</h3>
-        <img src="sala_de_ensayo/foto1.jpg" alt="Foto de la sala de ensayo 1">
-        <img src="sala_de_ensayo/foto2.jpg" alt="Foto de la sala de ensayo 2">
-        <img src="sala_de_ensayo/foto3.jpg" alt="Foto de la sala de ensayo 3">
-        <img src="sala_de_ensayo/foto4.jpg" alt="Foto de la sala de ensayo 4">
+        <img src="sala_de_ensayo/foto1.jpg" alt="Foto de la sala de ensayo 1" onclick="expandImage(this)">
+        <img src="sala_de_ensayo/foto2.jpg" alt="Foto de la sala de ensayo 2" onclick="expandImage(this)">
+        <img src="sala_de_ensayo/foto3.jpg" alt="Foto de la sala de ensayo 3" onclick="expandImage(this)">
+        <img src="sala_de_ensayo/foto4.jpg" alt="Foto de la sala de ensayo 4" onclick="expandImage(this)">
         
         <!-- Sala de Grabación -->
         <h3>Sala de Grabación</h3>
-        <img src="sala_de_grabacion/foto1.jpg" alt="Foto de la sala de grabación 1">
-        <img src="sala_de_grabacion/foto2.jpg" alt="Foto de la sala de grabación 2">
-        <img src="sala_de_grabacion/foto3.jpg" alt="Foto de la sala de grabación 3">
-        <img src="sala_de_grabacion/foto4.jpg" alt="Foto de la sala de grabación 4">
-        <img src="sala_de_grabacion/foto5.jpg" alt="Foto de la sala de grabación 5">
-        <img src="sala_de_grabacion/foto6.jpg" alt="Foto de la sala de grabación 6">
-        <img src="sala_de_grabacion/foto7.jpg" alt="Foto de la sala de grabación 7">
-        <img src="sala_de_grabacion/foto8.jpg" alt="Foto de la sala de grabación 8">
-        <img src="sala_de_grabacion/foto9.jpg" alt="Foto de la sala de grabación 9">
+        <img src="sala_de_grabacion/foto1.jpg" alt="Foto de la sala de grabación 1" onclick="expandImage(this)">
+        <img src="sala_de_grabacion/foto2.jpg" alt="Foto de la sala de grabación 2" onclick="expandImage(this)">
+        <img src="sala_de_grabacion/foto3.jpg" alt="Foto de la sala de grabación 3" onclick="expandImage(this)">
+        <img src="sala_de_grabacion/foto4.jpg" alt="Foto de la sala de grabación 4" onclick="expandImage(this)">
+        <img src="sala_de_grabacion/foto5.jpg" alt="Foto de la sala de grabación 5" onclick="expandImage(this)">
+        <img src="sala_de_grabacion/foto6.jpg" alt="Foto de la sala de grabación 6" onclick="expandImage(this)">
+        <img src="sala_de_grabacion/foto7.jpg" alt="Foto de la sala de grabación 7" onclick="expandImage(this)">
+        <img src="sala_de_grabacion/foto8.jpg" alt="Foto de la sala de grabación 8" onclick="expandImage(this)">
+        <img src="sala_de_grabacion/foto9.jpg" alt="Foto de la sala de grabación 9" onclick="expandImage(this)">
     </section>
 
     <script>
