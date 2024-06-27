@@ -85,9 +85,29 @@
             text-decoration: none;
             margin: 0 10px;
         }
+
+        /* Estilos adicionales para Swiper.js */
+        .swiper-container {
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
-    <!-- Lazysizes para la carga diferida de imágenes -->
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+    <!-- CSS de Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <header>
@@ -114,168 +134,95 @@
     <section class="photo-gallery">
         <h2>Nuestras Salas</h2>
         
-        <!-- Sala de Control -->
+        <!-- Carrusel de Sala de Control -->
         <h3>Sala de Control</h3>
-        <picture>
-            <source data-srcset="foto1.webp" type="image/webp">
-            <source data-srcset="foto1.jpg" type="image/jpeg">
-            <img data-src="foto1.jpg" class="lazyload" alt="Foto de la sala de control 1" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto2.webp" type="image/webp">
-            <source data-srcset="foto2.jpg" type="image/jpeg">
-            <img data-src="foto2.jpg" class="lazyload" alt="Foto de la sala de control 2" width="300" height="200">
-        </picture>
+        <div class="swiper-container sala-control">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="foto1.jpg" alt="Foto de la sala de control 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="foto2.jpg" alt="Foto de la sala de control 2">
+                </div>
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <!-- Agregar navegación si lo deseas -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
 
-        <!-- Sala de Grabación -->
+        <!-- Carrusel de Sala de Grabación -->
         <h3>Sala de Grabación</h3>
-        <picture>
-            <source data-srcset="foto3.webp" type="image/webp">
-            <source data-srcset="foto3.jpg" type="image/jpeg">
-            <img data-src="foto3.jpg" class="lazyload" alt="Foto de la sala de grabación 1" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto4.webp" type="image/webp">
-            <source data-srcset="foto4.jpg" type="image/jpeg">
-            <img data-src="foto4.jpg" class="lazyload" alt="Foto de la sala de grabación 2" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto5.webp" type="image/webp">
-            <source data-srcset="foto5.jpg" type="image/jpeg">
-            <img data-src="foto5.jpg" class="lazyload" alt="Foto de la sala de grabación 3" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto6.webp" type="image/webp">
-            <source data-srcset="foto6.jpg" type="image/jpeg">
-            <img data-src="foto6.jpg" class="lazyload" alt="Foto de la sala de grabación 4" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto7.webp" type="image/webp">
-            <source data-srcset="foto7.jpg" type="image/jpeg">
-            <img data-src="foto7.jpg" class="lazyload" alt="Foto de la sala de grabación 5" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto8.webp" type="image/webp">
-            <source data-srcset="foto8.jpg" type="image/jpeg">
-            <img data-src="foto8.jpg" class="lazyload" alt="Foto de la sala de grabación 6" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto9.webp" type="image/webp">
-            <source data-srcset="foto9.jpg" type="image/jpeg">
-            <img data-src="foto9.jpg" class="lazyload" alt="Foto de la sala de grabación 7" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto10.webp" type="image/webp">
-            <source data-srcset="foto10.jpg" type="image/jpeg">
-            <img data-src="foto10.jpg" class="lazyload" alt="Foto de la sala de grabación 8" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto11.webp" type="image/webp">
-            <source data-srcset="foto11.jpg" type="image/jpeg">
-            <img data-src="foto11.jpg" class="lazyload" alt="Foto de la sala de grabación 9" width="300" height="200">
-        </picture>
-       
-        <!-- Sala Auxiliar -->
-        <h3>Sala Auxiliar</h3>
-        <picture>
-            <source data-srcset="foto12.webp" type="image/webp">
-            <source data-srcset="foto12.jpg" type="image/jpeg">
-            <img data-src="foto12.jpg" class="lazyload" alt="Foto de la sala auxiliar 1" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto13.webp" type="image/webp">
-            <source data-srcset="foto13.jpg" type="image/jpeg">
-            <img data-src="foto13.jpg" class="lazyload" alt="Foto de la sala auxiliar 2" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto14.webp" type="image/webp">
-            <source data-srcset="foto14.jpg" type="image/jpeg">
-            <img data-src="foto14.jpg" class="lazyload" alt="Foto de la sala auxiliar 3" width="300" height="200">
-        </picture>
-         
-        <!-- Sala de Mezcla -->
-        <h3>Sala de Mezcla</h3>
-        <picture>
-            <source data-srcset="foto15.webp" type="image/webp">
-            <source data-srcset="foto15.jpg" type="image/jpeg">
-            <img data-src="foto15.jpg" class="lazyload" alt="Foto de la sala de mezcla 1" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto16.webp" type="image/webp">
-            <source data-srcset="foto16.jpg" type="image/jpeg">
-            <img data-src="foto16.jpg" class="lazyload" alt="Foto de la sala de mezcla 2" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto17.webp" type="image/webp">
-            <source data-srcset="foto17.jpg" type="image/jpeg">
-            <img data-src="foto17.jpg" class="lazyload" alt="Foto de la sala de mezcla 3" width="300" height="200">
-        </picture>
+        <div class="swiper-container sala-grabacion">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="foto3.jpg" alt="Foto de la sala de grabación 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="foto4.jpg" alt="Foto de la sala de grabación 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="foto5.jpg" alt="Foto de la sala de grabación 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="foto6.jpg" alt="Foto de la sala de grabación 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="foto7.jpg" alt="Foto de la sala de grabación 5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="foto8.jpg" alt="Foto de la sala de grabación 6">
+                </div>
+                <div class="swiper-slide">
+                    <img src="foto9.jpg" alt="Foto de la sala de grabación 7">
+                </div>
+                <div class="swiper-slide">
+                    <img src="foto10.jpg" alt="Foto de la sala de grabación 8">
+                </div>
+                <div class="swiper-slide">
+                    <img src="foto11.jpg" alt="Foto de la sala de grabación 9">
+                </div>
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <!-- Agregar navegación si lo deseas -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
 
-        <!-- Sala de Ensayo -->
-        <h3>Sala de Ensayo</h3>
-        <picture>
-            <source data-srcset="foto18.webp" type="image/webp">
-            <source data-srcset="foto18.jpg" type="image/jpeg">
-            <img data-src="foto18.jpg" class="lazyload" alt="Foto de la sala de ensayo 1" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto19.webp" type="image/webp">
-            <source data-srcset="foto19.jpg" type="image/jpeg">
-            <img data-src="foto19.jpg" class="lazyload" alt="Foto de la sala de ensayo 2" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto20.webp" type="image/webp">
-            <source data-srcset="foto20.jpg" type="image/jpeg">
-            <img data-src="foto20.jpg" class="lazyload" alt="Foto de la sala de ensayo 3" width="300" height="200">
-        </picture>
-        <picture>
-            <source data-srcset="foto21.webp" type="image/webp">
-            <source data-srcset="foto21.jpg" type="image/jpeg">
-            <img data-src="foto21.jpg" class="lazyload" alt="Foto de la sala de ensayo 4" width="300" height="200">
-        </picture>
+        <!-- Agrega más secciones de carrusel para otras salas -->
         
     </section>
 
+    <!-- Scripts al final para mejorar el rendimiento de carga -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        function expandImage(img) {
-            var src = img.src;
-            var modal = document.createElement('div');
-            modal.style.position = 'fixed';
-            modal.style.top = '0';
-            modal.style.left = '0';
-            modal.style.width = '100%';
-            modal.style.height = '100%';
-            modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-            modal.style.display = 'flex';
-            modal.style.alignItems = 'center';
-            modal.style.justifyContent = 'center';
-            modal.style.cursor = 'pointer';
-            modal.onclick = function() { document.body.removeChild(modal); };
-            
-            var modalImg = document.createElement('img');
-            modalImg.src = src;
-            modalImg.style.maxWidth = '90%';
-            modalImg.style.maxHeight = '90%';
-            
-            modal.appendChild(modalImg);
-            document.body.appendChild(modal);
-        }
+        var swiperControl = new Swiper('.sala-control', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        var swiperGrabacion = new Swiper('.sala-grabacion', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
+
     <footer>
-        <div class="social-links-center" style="margin-top: 2em;">
-            <a href="https://www.facebook.com/ladoamusic" target="_blank"><img src="facebook.png" alt="Facebook" style="width: 30px;"></a>
-            <a href="https://www.instagram.com/ladoamusic" target="_blank"><img src="instagram.png" alt="Instagram" style="width: 30px;"></a>
-            <a href="https://wa.me/573116759811" target="_blank"><img src="whatsapp.png" alt="Whatsapp" style="width: 30px;"></a>
-            <a href="https://www.youtube.com/@ladoamusic" target="_blank"><img src="youtube.png" alt="Youtube" style="width: 30px;"></a>
-            <a href="https://maps.app.goo.gl/4rNzwuSF7MEyej9s8" target="_blank"><img src="googlemaps.png" alt="Google Maps" style="width: 30px;"></a>
-        </div>
+        <p>Encuéntranos en:</p>
+        <p><a href="https://goo.gl/maps/RHjydeYoY4E2" target="_blank">Calle 104A #47A-79, Bogotá, Colombia</a></p>
+        <p>Síguenos en:</p>
+        <p>
+            <a href="https://www.facebook.com/ladoamusic" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/ladoamusic" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+        </p>
     </footer>
-    <div class="social-links-top-right">
-        <a href="https://www.facebook.com/ladoamusic" target="_blank"><img src="facebook.png" alt="Facebook" style="width: 30px;"></a>
-        <a href="https://www.instagram.com/ladoamusic" target="_blank"><img src="instagram.png" alt="Instagram" style="width: 30px;"></a>
-        <a href="https://wa.me/573116759811" target="_blank"><img src="whatsapp.png" alt="Whatsapp" style="width: 30px;"></a>
-        <a href="https://www.youtube.com/@ladoamusic" target="_blank"><img src="youtube.png" alt="Youtube" style="width: 30px;"></a>
-        <a href="https://maps.app.goo.gl/4rNzwuSF7MEyej9s8" target="_blank"><img src="googlemaps.png" alt="Google Maps" style="width: 30px;"></a>
-    </div>
 </body>
 </html>
