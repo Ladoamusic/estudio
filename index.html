@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Google tag (gtag.js) -->
+    <meta name="p:domain_verify" content="42b7a4a14b11ba83e499b5f16d067b43"/>    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQD0HTSDK1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -117,42 +115,17 @@
         <h2>Nuestras Salas</h2>
         
         <!-- Sala de Control -->
-    <h3>Sala de Control</h3>
-    <div class="swiper-container control-gallery">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img data-src="foto1.jpg" class="lazyload" alt="Foto de la sala de control 1" width="300" height="200">
-            </div>
-            <div class="swiper-slide">
-                <img data-src="foto2.jpg" class="lazyload" alt="Foto de la sala de control 2" width="300" height="200">
-            </div>
-            <!-- Agrega más imágenes aquí según sea necesario -->
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-</section>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var swiper = new Swiper('.control-gallery', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    });
-</script>
+        <h3>Sala de Control</h3>
+        <picture>
+            <source data-srcset="foto1.webp" type="image/webp">
+            <source data-srcset="foto1.jpg" type="image/jpeg">
+            <img data-src="foto1.jpg" class="lazyload" alt="Foto de la sala de control 1" width="300" height="200">
+        </picture>
+        <picture>
+            <source data-srcset="foto2.webp" type="image/webp">
+            <source data-srcset="foto2.jpg" type="image/jpeg">
+            <img data-src="foto2.jpg" class="lazyload" alt="Foto de la sala de control 2" width="300" height="200">
+        </picture>
 
         <!-- Sala de Grabación -->
         <h3>Sala de Grabación</h3>
@@ -305,4 +278,4 @@
         <a href="https://maps.app.goo.gl/4rNzwuSF7MEyej9s8" target="_blank"><img src="googlemaps.png" alt="Google Maps" style="width: 30px;"></a>
     </div>
 </body>
-</html> 
+</html>
