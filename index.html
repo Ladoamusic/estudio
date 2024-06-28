@@ -1,6 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajos Realizados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #trabajos-realizados {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .artista {
+            margin-bottom: 40px;
+        }
+        .artista h3 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .artista p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .artista a {
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section id="trabajos-realizados">
+        <h2>Trabajos Realizados</h2>
+
+        <!-- Ejemplo con Google Drive -->
+        <div class="artista">
+            <h3>Artista 1</h3>
+            <p>Álbum: Album 1</p>
+            <a href="https://drive.google.com/file/d/GOOGLE_DRIVE_FILE_ID/view" target="_blank">Escuchar Album</a>
+        </div>
+
+        <!-- Ejemplo con YouTube -->
+        <div class="artista">
+            <h3>Artista 2</h3>
+            <p>Álbum: Album 2</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Añade más artistas y álbumes según sea necesario -->
+    </section>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQD0HTSDK1"></script>
     <script>
