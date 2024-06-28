@@ -68,7 +68,6 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            z-index: 10;
         }
 
         .social-links-top-right a {
@@ -86,38 +85,15 @@
             text-decoration: none;
             margin: 0 10px;
         }
-
-        /* Estilos adicionales para Swiper.js */
-        .swiper-container {
-            margin-bottom: 20px;
-            max-width: 100%;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            max-width: 100%;
-            height: auto;
-        }
     </style>
-    <!-- CSS de Swiper -->
+    <!-- Lazysizes para la carga diferida de imágenes -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+    <!-- Estilos Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <header>
         <h1><img src="logo.png" alt="Logo del Estudio" style="max-width: 400px;"></h1>
-        <!-- Enlaces a redes sociales -->
-        <div class="social-links-top-right">
-            <a href="https://www.facebook.com/ladoamusic" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/ladoamusic" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-        </div>
     </header>
     
     <!-- Video de YouTube -->
@@ -140,50 +116,73 @@
     <section class="photo-gallery">
         <h2>Nuestras Salas</h2>
         
-        <!-- Carrusel de Sala de Control -->
+        <!-- Sala de Control -->
         <h3>Sala de Control</h3>
         <div class="swiper-container sala-control">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="foto1.jpg" alt="Foto de la sala de control 1">
-                </div>
+                <div class="swiper-slide"><img src="foto1.jpg" alt="Foto de la sala de control 1"></div>
+                <div class="swiper-slide"><img src="foto2.jpg" alt="Foto de la sala de control 2"></div>
                 <!-- Agrega más imágenes según sea necesario -->
             </div>
-            <!-- Agregar navegación si lo deseas -->
+            <!-- Agregar navegación -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
 
-        <!-- Carrusel de Sala de Grabación -->
+        <!-- Sala de Grabación -->
         <h3>Sala de Grabación</h3>
         <div class="swiper-container sala-grabacion">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="foto2.jpg" alt="Foto de la sala de grabación 1">
-                </div>
+                <div class="swiper-slide"><img src="foto3.jpg" alt="Foto de la sala de grabación 1"></div>
+                <div class="swiper-slide"><img src="foto4.jpg" alt="Foto de la sala de grabación 2"></div>
                 <!-- Agrega más imágenes según sea necesario -->
             </div>
-            <!-- Agregar navegación si lo deseas -->
+            <!-- Agregar navegación -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
 
-        <!-- Carrusel de Sala de Ensayo -->
+        <!-- Sala Auxiliar -->
+        <h3>Sala Auxiliar</h3>
+        <div class="swiper-container sala-auxiliar">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="foto5.jpg" alt="Foto de la sala auxiliar 1"></div>
+                <div class="swiper-slide"><img src="foto6.jpg" alt="Foto de la sala auxiliar 2"></div>
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <!-- Agregar navegación -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Sala de Mezcla -->
+        <h3>Sala de Mezcla</h3>
+        <div class="swiper-container sala-mezcla">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="foto7.jpg" alt="Foto de la sala de mezcla 1"></div>
+                <div class="swiper-slide"><img src="foto8.jpg" alt="Foto de la sala de mezcla 2"></div>
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <!-- Agregar navegación -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Sala de Ensayo -->
         <h3>Sala de Ensayo</h3>
         <div class="swiper-container sala-ensayo">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="foto3.jpg" alt="Foto de la sala de ensayo 1">
-                </div>
+                <div class="swiper-slide"><img src="foto9.jpg" alt="Foto de la sala de ensayo 1"></div>
+                <div class="swiper-slide"><img src="foto10.jpg" alt="Foto de la sala de ensayo 2"></div>
                 <!-- Agrega más imágenes según sea necesario -->
             </div>
-            <!-- Agregar navegación si lo deseas -->
+            <!-- Agregar navegación -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
+        
     </section>
 
-    <!-- Scripts al final para mejorar el rendimiento de carga -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiperControl = new Swiper('.sala-control', {
@@ -204,6 +203,24 @@
             },
         });
 
+        var swiperAuxiliar = new Swiper('.sala-auxiliar', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        var swiperMezcla = new Swiper('.sala-mezcla', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
         var swiperEnsayo = new Swiper('.sala-ensayo', {
             slidesPerView: 1,
             spaceBetween: 10,
@@ -215,14 +232,11 @@
     </script>
 
     <footer>
-        <p>Encuéntranos en:</p>
-        <p><a href="https://goo.gl/maps/RHjydeYoY4E2" target="_blank">Calle 104A #47A-79, Bogotá, Colombia</a></p>
-        <p>Síguenos en:</p>
-        <p>
-            <a href="https://www.facebook.com/ladoamusic" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/ladoamusic" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-        </p>
+        <p>Visítanos en nuestras redes sociales:</p>
+        <div class="social-links-top-right">
+            <a href="https://www.facebook.com/ladoamusic" target="_blank" rel="noopener noreferrer"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/ladoamusic" target="_blank" rel="noopener noreferrer"><img src="instagram.png" alt="Instagram"></a>
+        </div>
     </footer>
 </body>
 </html>
-
