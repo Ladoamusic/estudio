@@ -48,7 +48,7 @@
             background-color: black; /* Color del indicador activo */
         }
 
-                /* Estilos para los enlaces de redes sociales en la parte superior derecha */
+        /* Estilos para los enlaces de redes sociales en la parte superior derecha */
         .social-links-top-right {
             position: absolute;
             top: 10px;
@@ -71,21 +71,25 @@
             margin: 0 10px;
         }
     </style>
-    <!-- Lazysizes para la carga diferida de imágenes -->
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
 </head>
 <body>
     <header>
         <h1><img src="logo.png" alt="Logo del Estudio" style="max-width: 400px;"></h1>
     </header>
     
-        <!-- Video de YouTube -->
+    <!-- Video de YouTube -->
     <section>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/ELAONSjjric?autoplay=1&vq=hd1080&mute=0" 
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
-            <div class="video-caption">¡Bienvenido a nuestro tour virtual! Descubre nuestras salas.</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ELAONSjjric?autoplay=1&vq=hd1080&mute=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-center mt-2">
+                        <p class="text-white">¡Bienvenido a nuestro tour virtual! Descubre nuestras salas.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -257,7 +261,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 Lado A Music. Todos los derechos reservados. Bogota - Colombia.</p>
+        <p>© 2024 Lado A Music. Todos los derechos reservados. Diseñado por [Nombre del diseñador].</p>
     </footer>
 
     <!-- Bootstrap y Scripts de JavaScript -->
@@ -266,12 +270,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-    <!-- Bootstrap y Scripts de JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
-
